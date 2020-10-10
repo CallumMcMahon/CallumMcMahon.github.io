@@ -429,6 +429,9 @@ footer {
 
 .profilePic{
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
 }
 
 @keyframes pulsate {
