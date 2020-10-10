@@ -46,21 +46,33 @@
     </header>
     <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Callum McMahon</h1>
-            <h2>Machine Learning Engineer</h2>
-            <a href="Callum McMahon CV Sep 2020.pdf" class="btn-rounded-white">Download Resume</a>
+    <div id="lead" class="container-fluid">
+        <div class="row vert-center">
+            <div id="lead-content" class="col col-md-8">
+                <h1>Callum McMahon</h1>
+                <h2>Machine Learning Engineer</h2>
+                <a href="Callum McMahon CV Oct 2020.pdf" class="btn-rounded-white">Download Resume</a>
+                <br>
+                <br>
+                <a class="deets" href="tel:07576630365">07576630365</a>
+                <br>
+                <a class="deets" href="mailto:mcmahon.callum@gmail.com">mcmahon.callum@gmail.com</a>
+                <br>
+                <a class="deets" href="https://github.com/CallumMcMahon">github.com/CallumMcMahon</a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img class="profilePic" src="images/profilePicture.JPG" width="300" height="300";/>
+            </div>
         </div>
         <!-- End #lead-content -->
 
-        <div id="lead-overlay"></div>
+        <!-- <div id="lead-overlay"></div> -->
 
-        <div id="lead-down">
+        <!-- <div id="lead-down" class="row">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
-        </div>
+        </div> -->
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
@@ -73,9 +85,10 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        Hi! I've just graduated and am looking to share my passion for machine learning in an industry setting. 
+                        With a strong background in maths and statistics, I have a rigorous understanding of the mathematics which underpin the models I use in all of my projects. 
+                        My Masters in machine learning has seen me implementing cutting edge research in NLP, computer vision as well as reinforcement learning.
+                        Always looking to expand my skillset, I have experience implementing machine learning solutions in a wider context, using Docker, Cloud computing, and web develepment amongst others.  
                     </p>
                 </div>
             </div>
@@ -86,42 +99,55 @@
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/mesh style.png" width="300" height="300" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>On Stylistic Differences Between 3D Meshes</h3>
-                        <p>
-                            A research project investigating the efficacy and flexibility of gram matrices over existing techniques in the context of 
-                            identifying regions of style similarity between 3D shapes.  
-                            Saliency maps are generated through backpropagating differences in style representations between shapes, 
-                            and are visualised via mesh colouring.
-                        </p>
-                        <a href="https://github.com/CallumMcMahon/Mesh-Style-Similarity">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+            <div class="row project shadow-large">
+                <div class="project-image">
+                    <img src="images/mesh style.png" width="300" height="300" />
                 </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/dobble.png" width="300" height="300" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Exploring real-time object detection and multi-label classification with Dobble</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+                <div class="project-info">
+                    <h3>On Stylistic Differences Between 3D Meshes</h3>
+                    <p>
+                        A research project investigating the efficacy and flexibility of gram matrices over existing techniques in the context of 
+                        identifying regions of style similarity between 3D shapes.  
+                        Saliency maps are generated through backpropagating differences in style representations between shapes, 
+                        and are visualised via mesh colouring.
+                    </p>
+                    <a href="https://github.com/CallumMcMahon/Mesh-Style-Similarity">View Project</a>
                 </div>
-                <!-- End .project -->
             </div>
+            <!-- End .project -->
+
+            <div class="row project shadow-large">
+                <div class="project-image">
+                    <img src="images/dobble.png" width="300" height="300" />
+                </div>
+                <div class="project-info">
+                    <h3>Exploring real-time object detection and multi-label classification with Dobble</h3>
+                    <p>
+                        Full implementation of a custom bounding-box detector for the card game Dobble in Pytorch. 
+                        Includes data collection and preprocessing using openCV, manual annotation, and data augmentations using random card rotations and backgrounds.
+                        Single-Shot-detector based model implemented for card localisation, followed by a multi-label classifier for icon recognition.
+                        Packaged as a user-facing application, achieving superhuman performance at over 95% accuracy at 25 predicted frames per second.
+                    </p>
+                    <a href="https://github.com/CallumMcMahon/Dobble-Computer-Vision">View Project</a>
+                </div>
+            </div>
+            <!-- End .project -->
+
+            <div class="row project shadow-large">
+                <div class="project-image">
+                    <img src="images/snake.png" width="300" height="300" />
+                </div>
+                <div class="project-info">
+                    <h3>Neuro-Evolutionary algorithm for agent control in Snake.</h3>
+                    <p>
+                        A feed forward network takes as input 3 simple proximity sensors to predict future agent movement.
+                        The neural network is optimised through simulating a population of agents, followed by reproduction, mutation, and recombination of network neurons.
+                        Performance is shown to increase over time, optimising for snake length and efficiency.
+                    </p>
+                    <a href="https://github.com/CallumMcMahon/Snake-ML">View Project</a>
+                </div>
+            </div>
+            <!-- End .project -->
         </div>
     </div>
     <!-- End #projects -->
@@ -132,25 +158,52 @@
             <h3>University College London</h3>
             <span class="education-date">Sept 2019 - Sept 2020</span>
             <h4>Masters in Machine Learning</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
+            Sample of modules taken:
+            <ul>
+                <li>
+                    Dissertation: On Stylistic Differences Between 3D Meshes
+                </li>
+                <li>
+                    Statistical Natural Language Processing
+                </li>
+                <li>
+                    Probabilistic and Unsupervised Learning
+                </li>
+                <li>
+                    Machine Vision
+                </li>
+                <li>
+                    Reinforcement Learning
+                </li>
+                <li>
+                    Inverse Problems In Imaging
+                </li>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
             <h3>University of St Andrews</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <span class="education-date">Sept 2016 - June 2019</span>
             <h4>Bachelor of Science in Mathematics</h4>
+            Dean’s list for academic excellence awarded for all three years of study
+            <br>
+            <br>
+            Sample of modules taken:
             <ul>
                 <li>
-                    Dean’s list for academic excellence awarded for all three years of study
+                    Time Series Analysis
                 </li>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Financial Mathematics
                 </li>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Generalised Linear Models and Data Analysis
+                </li>
+                <li>
+                    Knowledge Discovery and Datamining
+                </li>
+                <li>
+                    Computational Statistics
                 </li>
             </ul>
         </div>
@@ -185,7 +238,7 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>Python</li>
+            <li class="language">Python</li>
             <li>Pytorch</li>
             <li>Scikit-learn</li>
             <li>pandas</li>
@@ -193,14 +246,14 @@
             <li>matplotlib</li>
             <li>JAX</li>
             <li>Keras</li>
-            <li>R</li>
+            <li class="language">R</li>
             <li>tidyverse</li>
-            <li>Java</li>
-            <li>Julia</li>
-            <li>SQL</li>
-            <li>PHP</li>
+            <li class="language">Java</li>
+            <li class="language">Julia</li>
+            <li class="language">SQL</li>
+            <li class="language">PHP</li>
             <li>Docker</li>
-            <li>Bash</li>
+            <li class="language">Bash</li>
             <li>SSH</li>
         </ul>
     </div>
@@ -225,7 +278,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2020 Callum McMahon
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -236,22 +289,10 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/CallumMcMahon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/callum-mcmahon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
